@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resto.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--font-->
+    <title>Resto</title>
+    <link rel="icon" href="./images/cloche.png"
+<body>
+<header><!--pour que l'entete reste toujour visible n(navbar hadik)-->
+    <a href="#" class="logo"><span>EL</span> Khaima</a><!--span c'est pour isoler la lettre qui est dans le span-->
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu" ; >Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu">Menu</a></li>        <!--les elements de notre navbar--> <!--+ java script -->
+        <li><a href="#expert" onclick="toggleMenu">Expert</a></li>
+        <li><a href="#Avis" onclick="toggleMenu">Avis</a></li>
+        <li><a href="#contact"  onclick="toggleMenu" class="btn-reserve">Contactez-Nous</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere" style="background-color: rgb(255, 255, 255);"><!--on utilise des sections pour diferencier les parties du site ( class kbira) -->
+    <div class="contenu">
+        <h2>Bienvenue chez nous</h2>
+        <p>Vous le méritez!,</p>
+        <a href="#location" class="btn1"  onclick="toggleMenu">Nos etablissements</a>
+    </div>
+</section>
+<section class="apropos" id="apropos"> <!--nav bar /apropos-->
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Bienvenue à Al Khaima, un oasis de saveurs authentiques au cœur de la cuisine algérienne
+                 traditionnelle. Situé dans un décor chaleureux et accueillant, notre restaurant vous invite à 
+                 découvrir une expérience culinaire incomparable, où les arômes envoûtants et les épices exotiques transportent vos papilles dans un voyage à travers les terres ensoleillées de l'Algérie.
+
+               
+                
+                
+                 </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/dz/plate-with-fresh-food-burlap.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>M</span>enu</h2> 
+        <p>Voici quelques un de nos plas</p>
+    </div>
+    <div class="contenu"><!--ce div va contenir tout les div qui eux meme contienderont les images et les titres des images-->
+        <div class="box"><!--creé un cart de premier plat pour mettre l'image a l'interrieure -->
+            <div class="imbox"><!--l'image-->
+                <img src="./images/dz/arabian-food-composition-ramadan.jpg" alt="">
+            </div>
+            <div class="text"><!--nom du plat-->
+                <h3>Trida</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/ukrainian-russian-national-red-soup-borsch-closeup.jpg" >
+            </div>
+            <div class="text">
+                <h3>Chakhchoukha</h3>
+            </div>
+        </div>
+         <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/russian-soup-borsh-with-herbs-crackers.jpg" >
+            </div>
+            <div class="text">
+                <h3 style=" font-family: 'poppins', sans-serif ,'bold';">CHORBA</h3>
+            </div>
+        </div>
+ </div>
+ <center><a href="menu.html" class="btn1" target="_blank">voir plus</a></center> <!--centraliser-->
+ <div class="titre"><!--le bouton "voir plus"-->
+    <!--<a href="#" class="btn1">Voir Plus</a>-->
+ </div>
+</section>
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>E</span>xperts</h2>
+        <p>Description de nos exprerts</p>
+    </div>
+    <div class="contenu"> <!--chef1-->
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/chef-farid-rabhi.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>chef farid</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/chef rabah.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>chef Rabah</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/chef-hicham.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>chef Hicham</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/chef-ahmed.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>chef Ahmed</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+                                        <!--les avis de nos client -->
+ <section class="Avis" id="Avis"> 
+    <div class="titre blanc">
+        <h2 class="titre-texte">Que Disent Nos <span>Speciales</span>Clients  </h2>
+        
+    </div>
+    <div class="contenu">    
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/mahrez.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Très bonne expérience, très satisfait sur votr service merci EL Khaima<br><br></p>
+                <h3>Riyad Mahrez</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/khaled.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Service exceptionnel 
+
+                    Le personnel était attentif. Ils ont fait de notre dîner un moment mémorable. </p>
+                <h3>CHEB khaled</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/dz/salah.jpg" alt="">
+            </div>
+            <div class="text">
+               <p>Très bon accueil, service efficace... Et excellente qualité du repas ! On avait choisi ce restaurant un peu pour hasard, mais pas de regret.</p>
+               <h3>Salah Ougrout</h3>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section class="contact" id="contact">
+    <!---------------------------------------- coté bdd apree nkmlou---------->
+    <form action="resto.php" method="Post"><!-- pour liee html avec php :action = nom de php , methode= no idea-->>
+     <div class="titre noir">
+         <h1 class="titre-text"><span>C</span>ontact</h1>
+         <p>Vous pouvez nous contacter</p>
+     </div>
+     <div class="contactform">
+         <h3>Envoyer un message</h3>
+         <div class="inputboite">
+             <input type="text" placeholder="Nom"  id="Nom"  name="nom">
+         </div>
+         <div class="inputboite">
+            <input type="email" placeholder="email" name="email" >
+         </div>
+         <div class="inputboite">
+            <textarea placeholder="message" name="message" ></textarea>
+         </div>
+         <input class="btn1" onclick="verifier()" type="submit"/> <!--une verification que le champ du nom nest pas vide-->
+     </div>
+    </form>
+ </section>
+<!-----------------la partie ta3 la reservation ---------------------->
+ <section class="location" id="location">
+    <div class=" fram_de_location">
+        <h4>Contacter le service de réservation</h4><br>
+       
+        <H4><p class="num">Babezzouar-Alger : 0688668861</p></H4>
+        <H4><p class="num">Alger centre-Alger : 0770343223</p></h4>
+        <H4> <p class="num">Boufarik - Blida : 0669661232 </p></H4>
+        <iframe class="mapp"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.036481815866!2d3.052491992712021!3d36.768817049983774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb25edb961a81%3A0x22bb8eb1f0ea9b63!2sLA%20KHAIMA!5e0!3m2!1sfr!2sdz!4v1716320193651!5m2!1sfr!2sdz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+
+
+
+
+    
+</section>
+
+                                     <!--java script-->
+ 
+ <script type="text/javascript">/* */
+     window.addEventListener('scroll', function(){  /*pour garde le header comme une first clac (tjr affiché)*/
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+        function toggleMenu(){ 
+            const toggleMenu = document.querySelector();
+            const navbar = document.querySelector();
+            menutoggle.classList.toggle();
+            navbar.classList.toggle();
+        }
+       /*verifier que le champs du nom est non vide*/
+        function verifier (){
+            var ident = document.getElementById('Nom').value;
+            if(ident==""){
+                alert("Entrer votre nom.");
+                document.getElementById("Nom").focus();
+       
+            }
+            
+        }
+ </script>
+</body>
+</html>
